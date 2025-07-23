@@ -13,7 +13,20 @@
 </head>
 <body>
   <button onclick="toggleDarkMode()">🌙</button>
+<script>
+// Desactiva teclas y mouse
+document.addEventListener('contextmenu', e => e.preventDefault());
+document.addEventListener('copy', e => e.preventDefault());
+document.addEventListener('cut', e => e.preventDefault());
+document.addEventListener('paste', e => e.preventDefault());
+document.onkeydown = function(e) {
+  if (e.ctrlKey && (e.key === 'u' || e.key === 'c' || e.key === 'v' || e.key === 'x' || e.key === 'a' || e.key === 's')) {
+    e.preventDefault();
+  }
+};
+</script>
 
+  
   <header>
     <h1>EDUCA</h1>
     <H2>Educational Classrooms</H2>
