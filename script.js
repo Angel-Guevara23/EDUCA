@@ -20,7 +20,7 @@ function validarRegistro() {
 
   if (usuario && clave === "EDUCAEC") {
     localStorage.setItem("usuarioValido", usuario);
-    window.location.href = "index.educa.html";
+    window.location.href = "index.html";
   } else {
     alert("Lo sentimos hemos encontrado que la clave Ingresada es incorrecta");
   }
