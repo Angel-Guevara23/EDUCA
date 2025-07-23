@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mi Sitio Educativo</title>
+  <link rel="stylesheet" href="style.educa.css" />
+  <script>
+    const usuario = localStorage.getItem("usuarioValido");
+    if (!usuario) {
+      window.location.href = "login.educa.html";
+    }
+  </script>
+</head>
+<body>
+  <button onclick="toggleDarkMode()">🌙</button>
+
+  <header>
+    <h1>EDUCA</h1>
+    <H2>Educational Classrooms</H2>
+    <nav>
+      <ul>
+        <li><a href="#recursos">Recursos</a></li>
+        <li><a href="#evaluaciones">Evaluaciones</a></li>
+        <li><a href="#registro">Registro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="recursos">
+      <h2>¿Qué encontrarás aquí?</h2>
+      <p>Este sitio ha sido creado para compartir conocimiento, prácticas web y herramientas útiles para aprender y crecer. ¡Todo desde cero y hecho con pasión!</p>
+    </section>
+
+    <section id="evaluaciones">
+      <h2>Desarrollado</h2>
+      <p>Gracias a <strong>Copilot de Microsoft</strong> y <b>Angel Guevara</b></p>
+    </section>
+
+    <section id="registro">
+      <h2>Si necesitas conocer tu nivel de Ingles puedes registrarte para poderte contactar pronto</h2>
+      <form onsubmit="enviarWhatsApp(); return false;">
+        <label>Ingresa:</label><br>
+        <input type="text" id="nombre" placeholder="Un nombre y un apellido" required><br><br>
+
+        <label>Mensaje:</label><br>
+        <textarea id="mensaje" placeholder="Education First Educational Classrooms" required></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Prohibido copiar, modificar o piratear. El código es para aprender, no para robar. 🙅‍♂️</p>
+  </footer>
+
+  <audio autoplay loop>
+    <source src="assets/audio/educativo.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio.
+  </audio>
+
+  <script src="script.educa.js"></script>
+</body>
+</html>

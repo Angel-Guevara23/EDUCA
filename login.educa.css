@@ -1,0 +1,55 @@
+body {
+    background-color: white;
+    font-family: cursive;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    background-color: #051424;
+    color: white;
+    padding: 1em;
+    margin: 0;
+    border-bottom: 3px solid skyblue;
+}
+
+label {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+form {
+    background-color: rgba(135, 207, 235, 0.084);
+    border-radius: 3em #051424;
+    box-shadow: 2em black;
+    padding: 2em;
+}
+
+input {
+    background-color: white;
+    border: none;
+    padding: 1em;
+    padding-left: 6em;
+    padding-right: 6em;
+    font-weight: bold;
+    border-radius: 1em;
+    border-left: 1px solid #051424;
+    border-right: 1px solid #051424;
+    text-align: center;
+}
+
+button {
+    background-color: #051424;
+    color: white;
+    padding: 1em;
+    border-radius: 1em;
+    border: none;
+}
+
+footer {
+    font-family: tahoma;
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin: 0;
+    box-shadow: 0px 10px 10px 0px #051424;
+}
